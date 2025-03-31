@@ -1,6 +1,45 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const addAll = (numArr) => {
+  let sum = 0;
+  for(let num of numArr){
+    sum += num;
+  }
+  return sum;
+}
+
+const countSpaces = (str) =>{
+  let spaceChar = 0;
+  for(let char of str){
+    if(char === " "){
+      spaceChar++;
+    }
+  }
+  return spaceChar;
+}
+
+const countTrues = (arr) => {
+  let numTrue = 0;
+  for(let tru of arr){
+    if(tru === true){
+      numTrue++;
+    }
+  }
+  return numTrue;
+}
+
+const makeFriendly = (para) =>{
+  let newPara = ``;
+  for(let char of para){
+    if(char === '.'){
+      newPara += '!'
+    } else {
+      newPara += char;
+    }
+  }
+  return newPara;
+}
 
 
 /*********************************
