@@ -41,6 +41,66 @@ const makeFriendly = (para) =>{
   return newPara;
 }
 
+//-------------------------------------- maps
+
+const cubeAll = (numsArr) =>{
+  let thirdPower = [];
+  console.log(numsArr)
+  for(let nums of numsArr){
+    thirdpower = thirdPower.push(nums * nums * nums);
+    console.log(thirdPower);
+  }
+  return thirdPower;
+}
+// describe('addNoises', () => {
+//   it('adds the appropriate noises for each animal in the given array', () => {
+//     const dogs = ['Fido', 'Rolph', 'Maisie'];
+//     const cats = ['Garfield', 'Heathcliff'];
+//     const dinos = ['Barnie', 'Sharp Tooth'];
+
+//     const animals1 = ['Fido', 'Garfield', 'Sharp Tooth'];
+//     const withNoises1 = ['Fido says "Woof!"', 'Garfield says "Meow!"', 'Sharp Tooth says "ROWR."'];
+//     const animals2 = ['Rolph', 'Maisie', 'Barnie', 'Heathcliff'];
+//     const withNoises2 = [
+//       'Rolph says "Woof!"',
+//       'Maisie says "Woof!"',
+//       'Barnie says "ROWR."',
+//       'Heathcliff says "Meow!"',
+//     ];
+
+//     assert.deepStrictEqual(addNoises(animals1), withNoises1);
+//     assert.deepStrictEqual(addNoises(animals2), withNoises2);
+//   });
+
+
+const addNoises = (animalArr) => {
+  let animalNoise = [];
+  const dogs = ['Fido', 'Rolph', 'Maisie'];
+  const cats = ['Garfield', 'Heathcliff'];
+  const dinos = ['Barnie', 'Sharp Tooth'];
+  // console.log(animalArr);
+  
+  for(let animal of animalArr){
+
+    switch(true){
+      case dogs.includes(animal):
+          animalNoise.push(`${animal} says "Woof!"`);
+          break; 
+      case cats.includes(animal):
+          animalNoise.push(`${animal} says "Meow!"`);
+          break; 
+      case dinos.includes(animal):
+          animalNoise.push(`${animal} says "ROWR."`);
+          break; 
+    }
+  }
+  return animalNoise;
+}
+
+//---------------------------------filters
+
+
+
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
