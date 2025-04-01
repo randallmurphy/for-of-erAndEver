@@ -99,7 +99,26 @@ const addNoises = (animalArr) => {
 
 //---------------------------------filters
 
+const womenOnly = (input) => {
+  let result = [];
+  for(let name of input){
+    if(name.charAt(name.length-1) === "F"){
+      console.log(name.length -1);
+      result.push(name);
+    }
+  }
+  return result;
+}
 
+const integersOnly = numArr => {
+  let intArr = [];
+  for(let ints of numArr){
+    if(ints % 1 === 0){
+      intArr.push(ints);
+    }
+  }
+  return intArr;
+}
 
 
 /*********************************
